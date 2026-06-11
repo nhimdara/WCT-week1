@@ -1,0 +1,210 @@
+<style>
+  .ms-root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e2d4a;
+    background: #f6f7f9;
+  }
+  .ms-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e2d4a;
+    padding: 0 1.5rem;
+    height: 52px;
+  }
+  .ms-nav-brand {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .ms-nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .ms-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .ms-hero {
+    background: linear-gradient(135deg, #1e2d4a 0%, #2e4a7a 100%);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  .ms-hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+  }
+  .ms-hero p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin: 0 0 2rem;
+  }
+  .ms-btn {
+    background: #2af000;
+    color: #0a3300;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+  }
+  .ms-main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+  }
+  .ms-section {
+    margin-bottom: 3rem;
+  }
+  .ms-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e2d4a;
+    margin: 0 0 1.25rem;
+  }
+  .ms-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+  .ms-card {
+    background: #fff;
+    border: 0.5px solid #dde2eb;
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  .ms-card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .ms-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e2d4a;
+    margin: 0 0 0.5rem;
+  }
+  .ms-card p {
+    font-size: 0.85rem;
+    color: #445;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .ms-about p {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: #334;
+    margin: 0 0 0.75rem;
+  }
+  .ms-form-group {
+    margin-bottom: 1rem;
+  }
+  .ms-form-group label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #1e2d4a;
+    margin-bottom: 0.35rem;
+  }
+  .ms-form-group input,
+  .ms-form-group textarea {
+    width: 100%;
+    max-width: 420px;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #c8d0dc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background: #fff;
+    color: #1e2d4a;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .ms-form-group textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  .ms-footer {
+    background: #1e2d4a;
+    color: #aab4c8;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+  }
+</style>
+<div class="ms-root">
+  <nav class="ms-nav">
+    <a href="#" class="ms-nav-brand">MySite</a>
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/feactures.html">Features</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="ms-hero">
+    <h1>Welcome to Web Development</h1>
+    <p>
+      Learn HTML, CSS, JavaScript — and build real websites you're proud of.
+    </p>
+    <button class="ms-btn">Get Started</button>
+  </header>
+  <main class="ms-main">
+    <section class="ms-section">
+      <h2>What You'll Learn</h2>
+      <div class="ms-cards">
+        <div class="ms-card">
+          <div class="ms-card-icon">📄</div>
+          <h3>HTML</h3>
+          <p>Structure the content of your web pages with semantic tags.</p>
+        </div>
+        <div class="ms-card">
+          <div class="ms-card-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Style your pages with colors, fonts, and beautiful layouts.</p>
+        </div>
+        <div class="ms-card">
+          <div class="ms-card-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Make your pages interactive and respond to user actions.</p>
+        </div>
+      </div>
+    </section>
+    <section class="ms-section ms-about">
+      <h2>About This Course</h2>
+      <p>
+        Web and Cloud Technology I covers the foundations of modern web
+        development. By the end of the semester you will have built and deployed
+        a complete website.
+      </p>
+      <p>
+        We focus on <strong>practical skills</strong> — every week you write
+        real code and ship a working project.
+      </p>
+    </section>
+    <section class="ms-section">
+      <h2>Contact Me</h2>
+      <div class="ms-form-group">
+        <label>Your name</label><input type="text" />
+      </div>
+      <div class="ms-form-group">
+        <label>Email</label><input type="email" />
+      </div>
+      <div class="ms-form-group">
+        <label>Message</label><textarea></textarea>
+      </div>
+      <button class="ms-btn">Send Message</button>
+    </section>
+  </main>
+  <footer class="ms-footer">
+    © 2026 Sao Kimsong · Web and Cloud Technology I
+  </footer>
+</div>
