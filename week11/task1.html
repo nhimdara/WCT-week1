@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <title>Number to String Converter</title>
+  </head>
+  <body>
+    <div class="container-sm bg-warning mt-5 pt-5">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center pb-5"
+      >
+        <h2 class="text-center mb-5">Number to String Converter</h2>
+
+        <input
+          class="form-control w-50"
+          type="text"
+          id="number"
+          placeholder="Enter number"
+        />
+        <button class="btn btn-primary m-3" onclick="convertNumber()">
+          Convert
+        </button>
+
+        <h3 id="result"></h3>
+      </div>
+    </div>
+  </body>
+  <script>
+    function convertNumber() {
+      let number = document.getElementById("number").value;
+
+      const words = {
+        0: "zero",
+        1: "one",
+        2: "two",
+        3: "three",
+        4: "four",
+        5: "five",
+        6: "six",
+        7: "seven",
+        8: "eight",
+        9: "nine",
+      };
+
+      let result = "";
+
+      for (let i = 0; i < number.length; i++) {
+        let digit = number[i];
+
+        if (words[digit] !== undefined) {
+          result += words[digit];
+        } else {
+          document.getElementById("result").innerHTML =
+            "Please enter numbers only!";
+          return;
+        }
+      }
+
+      document.getElementById("result").innerHTML = result;
+    }
+  </script>
+</html>
