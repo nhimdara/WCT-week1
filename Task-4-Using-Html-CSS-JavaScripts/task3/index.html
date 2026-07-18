@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="card table-card">
+      <h1>Multiplication Table</h1>
+      <form id="tableForm" class="controls">
+        <input id="number" type="number" value="2" required />
+        <button type="submit">Generate</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Expression</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

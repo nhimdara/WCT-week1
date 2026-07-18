@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Student Scores</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Student Scores</h1>
+      <ul id="scoreList" class="scores"></ul>
+      <p id="summary" class="summary"></p>
+      <form id="scoreForm" class="controls">
+        <input
+          id="newScore"
+          type="number"
+          min="0"
+          max="100"
+          placeholder="New score"
+          required
+        />
+        <button type="submit">Add score</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

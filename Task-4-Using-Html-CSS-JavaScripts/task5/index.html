@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="card todo-card">
+      <h1>My Tasks</h1>
+      <form id="taskForm" class="controls">
+        <input
+          id="newTask"
+          type="text"
+          placeholder="New task..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="taskList" class="tasks"></ul>
+      <p id="progress" class="progress">0 of 0 tasks done</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
