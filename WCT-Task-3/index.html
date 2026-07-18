@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediCloud - Virtual Clinic Platform</title>
+    <meta
+      name="description"
+      content="MediCloud is a secure telehealth platform for virtual clinics, scheduling, notes, payments, and patient care."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header sticky-top bg-white border-bottom">
+      <nav class="navbar">
+        <div class="container header-nav">
+          <a
+            class="navbar-brand brand"
+            href="#hero"
+            aria-label="MediCloud home"
+          >
+            <span class="brand-mark">M</span>
+            <span>MediCloud</span>
+          </a>
+
+          <div class="site-menu">
+            <ul
+              class="navbar-nav flex-row flex-wrap justify-content-center gap-3 gap-lg-4"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#how-it-works">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#faq">Faq</a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="btn btn-medi-primary rounded-pill px-4" href="#pricing"
+            >Get a Demo</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-fullscreen" id="hero">
+        <div class="container">
+          <div class="row hero-row align-items-center g-4 g-lg-5">
+            <div class="col-md-6">
+              <span class="badge rounded-pill security-pill"
+                >HIPAA Compliant &amp; Secure</span
+              >
+              <h1 class="hero-title mt-4 mb-3">
+                Run Your Virtual Clinic Effortlessly
+              </h1>
+              <p class="hero-text mb-4">
+                All-in-one telehealth platform designed for modern practices.
+                Manage patients, clinical notes, and secure HD video
+                consultations in one unified workspace.
+              </p>
+              <div class="d-grid d-sm-flex gap-3">
+                <a
+                  class="btn btn-medi-primary rounded-pill px-4"
+                  href="#pricing"
+                  >Get a Demo</a
+                >
+                <a
+                  class="btn btn-medi-outline rounded-pill px-4"
+                  href="#how-it-works"
+                  >Take a Quick tour</a
+                >
+              </div>
+            </div>
+
+            <div class="col-md-6 text-center hero-media-col">
+              <img
+                class="hero-image img-fluid"
+                src="./assets/images/hero-clinician.png"
+                alt="Clinician using a tablet in MediCloud"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trusted py-4">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-3">
+              <h2 class="trusted-title mb-1">Trusted by</h2>
+              <p class="trusted-copy mb-0">
+                We safeguard your practice with full security and HIPAA
+                compliance.
+              </p>
+            </div>
+            <div class="col-lg-9">
+              <div
+                class="row row-cols-2 row-cols-md-4 g-3 logo-strip"
+                aria-label="Partner logos"
+              >
+                <div class="col"><span>LOGOIPSUM</span></div>
+                <div class="col"><span>LOGOIPSUM</span></div>
+                <div class="col"><span>LOADINGRUN</span></div>
+                <div class="col"><span>Logoipsum</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section-pad" id="features">
+        <div class="container">
+          <div class="section-heading text-center mx-auto mb-5">
+            <h2>Clinical Excellence Integrated</h2>
+            <p>
+              Everything you need to provide top-tier care from anywhere in the
+              world.
+            </p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <article class="card feature-card h-100 border-0">
+                <div class="card-body">
+                  <span class="feature-icon"
+                    ><i class="fa-solid fa-video"></i
+                  ></span>
+                  <h3>Video Consultations</h3>
+                  <p>
+                    HD, peer-to-peer encrypted video calls with built-in waiting
+                    rooms and screen sharing.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card feature-card h-100 border-0">
+                <div class="card-body">
+                  <span class="feature-icon"
+                    ><i class="fa-regular fa-calendar"></i
+                  ></span>
+                  <h3>Scheduling</h3>
+                  <p>
+                    Automated booking, timezone detection, and calendar sync
+                    with Google and Outlook.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card feature-card h-100 border-0">
+                <div class="card-body">
+                  <span class="feature-icon"
+                    ><i class="fa-solid fa-laptop-medical"></i
+                  ></span>
+                  <h3>Digital EHR</h3>
+                  <p>
+                    Structured clinical notes, ICD-10 coding, and longitudinal
+                    patient health records.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card feature-card h-100 border-0">
+                <div class="card-body">
+                  <span class="rx-icon">R<span>x</span></span>
+                  <h3>ePrescriptions</h3>
+                  <p>
+                    Securely send prescriptions directly to pharmacies with
+                    automated interaction checks.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card feature-card h-100 border-0">
+                <div class="card-body">
+                  <span class="feature-icon"
+                    ><i class="fa-regular fa-credit-card"></i
+                  ></span>
+                  <h3>Payments</h3>
+                  <p>
+                    Integrated billing, insurance claims processing, and direct
+                    patient payments.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card feature-card h-100 border-0">
+                <div class="card-body">
+                  <span class="feature-icon"
+                    ><i class="fa-solid fa-shield"></i
+                  ></span>
+                  <h3>Secure &amp; Compliant</h3>
+                  <p>
+                    SOC2 Type II, HIPAA, and GDPR compliant with data residency
+                    options.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps section-pad text-white" id="how-it-works">
+        <div class="container">
+          <div
+            class="section-heading section-heading-light text-center mx-auto mb-5"
+          >
+            <h2>Get started with MediCloud in 3 easy steps</h2>
+            <p>
+              Simple, supported, and designed to fit the way you work. From
+              setup to go-live, we guide every step so your practice sees value
+              from day one.
+            </p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-5 text-center">
+            <div class="col">
+              <article class="step-card">
+                <span class="step-number">1</span>
+                <h3>Sign Up</h3>
+                <p>
+                  Create your provider profile and customize your clinic
+                  branding.
+                </p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="step-card">
+                <span class="step-number">2</span>
+                <h3>Add Staff</h3>
+                <p>
+                  Invite your team of doctors, specialists, and front-desk
+                  admins.
+                </p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="step-card">
+                <span class="step-number active">3</span>
+                <h3>Start Consults</h3>
+                <p>
+                  Begin hosting secure consultations and managing patient care.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="d-grid d-sm-flex justify-content-center gap-3 mt-5">
+            <a class="btn btn-medi-primary rounded-pill px-4" href="#pricing"
+              >Get a Demo</a
+            >
+            <a class="btn btn-light rounded-pill px-4" href="#care"
+              >Take a Quick tour</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="care section-pad" id="care">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <img
+                class="care-image img-fluid"
+                src="./assets/images/video-consultation.png"
+                alt="Virtual consultation interface with a doctor and patient"
+              />
+            </div>
+            <div class="col-lg-5">
+              <h2 class="content-title">Crystal Clear Care</h2>
+              <p class="content-copy">
+                Experience zero-latency video consultations designed for
+                clinical accuracy. Share medical records and record sessions
+                with one click.
+              </p>
+              <ul class="list-unstyled check-list">
+                <li><span>&#10003;</span> 4K Resolution Video Support</li>
+                <li>
+                  <span>&#10003;</span> Built-in AI Scribe for clinical notes
+                </li>
+                <li><span>&#10003;</span> Integrated vitals monitoring</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section-pad" id="testimonials">
+        <div class="container">
+          <div class="section-heading text-center mx-auto mb-5">
+            <h2>What success looks like with MediCloud</h2>
+            <p>
+              Our clients do not just work with us, they grow with us. Here is
+              what a few of our satisfied customers had to say about their
+              experience with MediCloud.
+            </p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-lg-3 g-4">
+            <div class="col">
+              <article class="card quote-card h-100 border-0">
+                <div class="card-body">
+                  <p>
+                    "MediCloud transformed how I manage my pediatric practice.
+                    The patient experience is seamless, and my no-show rates
+                    dropped by 40%."
+                  </p>
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="avatar avatar-one"></span>
+                    <div>
+                      <strong>Dr. Sarah Jenkins</strong>
+                      <small>Pediatrician</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card quote-card h-100 border-0">
+                <div class="card-body">
+                  <p>
+                    "The HIPAA compliance and security were non-negotiable for
+                    my clinic. MediCloud delivered peace of mind and excellent
+                    UX."
+                  </p>
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="avatar avatar-two"></span>
+                    <div>
+                      <strong>Dr. Mark Thompson</strong>
+                      <small>Cardiologist</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card quote-card h-100 border-0">
+                <div class="card-body">
+                  <p>
+                    "Scaling my mental health practice across state lines was
+                    only possible because of their robust licensing and
+                    scheduling tools."
+                  </p>
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="avatar avatar-three"></span>
+                    <div>
+                      <strong>Dr. Elena Rodriguez</strong>
+                      <small>Psychiatrist</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing section-pad" id="pricing">
+        <div class="container">
+          <div class="section-heading text-center mx-auto mb-5">
+            <h2>Flexible Plans for Every Scale</h2>
+            <p>
+              Everything you need to provide top-tier care from anywhere in the
+              world.
+            </p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4 pricing-row mx-auto">
+            <div class="col">
+              <article class="card price-card h-100">
+                <div class="card-body">
+                  <p class="plan-label">Starter</p>
+                  <h3>$49 <span>/mo</span></h3>
+                  <ul class="list-unstyled">
+                    <li><span>&#10003;</span> 1 Provider</li>
+                    <li><span>&#10003;</span> Unlimited Consultations</li>
+                    <li><span>&#10003;</span> Basic EHR</li>
+                    <li><span>&#10003;</span> AI Note Assistant</li>
+                  </ul>
+                  <a class="btn btn-medi-outline rounded-pill w-100" href="#faq"
+                    >Select Plan</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="card price-card featured-plan h-100">
+                <span class="popular">Most Popular</span>
+                <div class="card-body">
+                  <p class="plan-label">Professional</p>
+                  <h3>$129 <span>/mo</span></h3>
+                  <ul class="list-unstyled">
+                    <li><span>&#10003;</span> Up to 5 Providers</li>
+                    <li><span>&#10003;</span> Full EHR &amp; ePrescriptions</li>
+                    <li><span>&#10003;</span> Custom Branding</li>
+                    <li><span>&#10003;</span> AI Clinical Assistant</li>
+                  </ul>
+                  <a class="btn btn-medi-soft rounded-pill w-100" href="#faq"
+                    >Get Started</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="card price-card h-100">
+                <div class="card-body">
+                  <p class="plan-label">Enterprise</p>
+                  <h3>Custom</h3>
+                  <ul class="list-unstyled">
+                    <li><span>&#10003;</span> Unlimited Providers</li>
+                    <li><span>&#10003;</span> Dedicated Success Manager</li>
+                    <li><span>&#10003;</span> API &amp; Webhook Access</li>
+                    <li><span>&#10003;</span> On-Prem Data Hosting</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section-pad" id="faq">
+        <div class="container">
+          <div class="faq-inner mx-auto">
+            <div class="section-heading text-center mx-auto mb-5">
+              <h2>Frequently Asked Questions</h2>
+              <p>
+                Simple, supported, and designed to fit the way you work. From
+                setup to go-live, we guide every step so your practice sees
+                value from day one.
+              </p>
+            </div>
+
+            <div class="faq-list">
+              <details open>
+                <summary>Is MediCloud HIPAA compliant?</summary>
+                <p>
+                  Yes. MediCloud uses encrypted communication, protected
+                  records, access controls, and compliance-first workflows for
+                  modern clinics.
+                </p>
+              </details>
+              <details>
+                <summary>Do patients need to download an app?</summary>
+                <p>
+                  No. Patients can join appointments from a secure browser link
+                  on desktop or mobile.
+                </p>
+              </details>
+              <details>
+                <summary>How does billing and payment work?</summary>
+                <p>
+                  You can collect patient payments, manage invoices, and connect
+                  billing workflows from the same dashboard.
+                </p>
+              </details>
+              <details>
+                <summary>Can I integrate my current EHR?</summary>
+                <p>
+                  Yes. The platform supports API and webhook access for
+                  enterprise integrations.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2>MediCloud</h2>
+            <p>
+              Empowering healthcare providers with modern, secure, and intuitive
+              digital clinic tools.
+            </p>
+          </div>
+          <nav class="col-6 col-lg-2" aria-label="Product links">
+            <h3>Product</h3>
+            <a href="#care">Telehealth Video</a>
+            <a href="#features">Patient Portal</a>
+            <a href="#features">Smart Billing</a>
+            <a href="#features">ePrescriptions</a>
+          </nav>
+          <nav class="col-6 col-lg-2" aria-label="Company links">
+            <h3>Company</h3>
+            <a href="#hero">About Us</a>
+            <a href="#testimonials">Careers</a>
+            <a href="#testimonials">Press Kit</a>
+            <a href="#features">Security</a>
+          </nav>
+          <nav class="col-6 col-lg-2" aria-label="Legal links">
+            <h3>Legal</h3>
+            <a href="#faq">Privacy Policy</a>
+            <a href="#faq">Terms of Service</a>
+            <a href="#faq">HIPAA Compliance</a>
+            <a href="#faq">GDPR</a>
+          </nav>
+        </div>
+      </div>
+      <div
+        class="container footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2 py-3"
+      >
+        <p>&copy; 2026 MediCloud. HIPAA Compliant &amp; Secure.</p>
+        <p>System Status: <strong>Operational</strong></p>
+      </div>
+    </footer>
+  </body>
+</html>
